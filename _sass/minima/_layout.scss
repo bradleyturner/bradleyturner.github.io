@@ -195,19 +195,28 @@
 
 .chat {
   font-family: 'Montserrat';
+  max-width: 90%;
 
   p {
     padding: 24px;
     display: inline-block;
     margin-bottom: 0;
-    max-width: 80%;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: .6;
+      }
+    }
   }
 }
 
 .chat-large {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .chat-normal {
@@ -216,17 +225,24 @@
 }
 
 .l-chat {
-  background-color: #edf7f7;
+  background-color: #0063f3;
   border-radius: 35px 35px 35px 0;
   display: inline-block;
+  color: white;
 }
 
 .r-chat {
-  background-color: #6da9d2;
-  border-radius: 35px 35px 0 35px;
-  color: #fff;
+  background-color: #fcce0e;
+  border-radius: 35px;
+  color: #000;
   display: inline-block;
   float: right;
+  margin-left: 10px;
+  margin-top: 16px;
+  &:hover {
+    color: rgba(#000, 0.6);
+    background-color: rgba(#fcce0e, 0.6);
+  }
 }
 
 .clearfix::after {
