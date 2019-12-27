@@ -4,6 +4,7 @@ title: "Nailing the right card UI through a hundred explorations"
 date: 2019-08-13 20:19:12 -0400
 categories: jekyll update
 excerpt: "Work in progress... Stay tuned."
+image: "cards.png"
 ---
 **Work in progress... Stay tuned.**
 

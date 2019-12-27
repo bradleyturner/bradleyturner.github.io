@@ -4,6 +4,7 @@ title: "Finding our focus while improving our new user experience"
 date: 2019-12-24 20:19:12 -0400
 categories: jekyll update
 excerpt: "Work in progress... Stay tuned."
+image: "focus.png"
 ---
 **Work in progress... Stay tuned.**
 

@@ -4,28 +4,34 @@ layout: default
 
 <div class="home">
   <div class="page-section">
-    <span class="page-eyebrow">Hey, I’m Brad – a growing designer</span>
-    <h1 class="page-heading">
-      Let's work on building inclusive systems and experiences together
-    </h1>
-    <img class="test" src="/assets/home-graphic.png"></div>
+    <span class="page-eyebrow"
+      >Hey, I’m Brad – a product designer at Handshake</span
+    >
+    <div>
+      <h1 class="page-heading">
+        Let's work on building inclusive systems and experiences together
+      </h1>
+      <img class="page-heading-image" src="/assets/home-graphic.png" />
+    </div>
     <a class="page-cta page-cta-primary" href="#footer">Get in touch</a>
-    
   </div>
 
   {{ content }}
   <div class="page-section">
     <span class="page-eyebrow"
-      >I’ve been working on a variety of projects and learning along the
-      way</span
+      >I've worked on a diverse set of projects, growing along the way</span
     >
+    <!-- <h2 class="page-section-heading">I've had the opportunity to lead various projects, growing as a designer along the way</h2> -->
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
         <a class="post-wrapper" href="{{ post.url | relative_url }}">
-          <h2 class="post-link">{{ post.title | escape }}</h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p class="post-excerpt">{{ post.excerpt }}</p>
+          <div class="post-overview">
+            <h3 class="post-link">{{ post.title | escape }}</h3>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <p class="post-excerpt">{{ post.excerpt }}</p>
+          </div>
+          <img class="post-image" src="/assets/{{ post.image }}"" />
         </a>
       </li>
       {% endfor %}
