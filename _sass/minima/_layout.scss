@@ -386,6 +386,42 @@
   }
 }
 
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: none;
+}
+
+.pop-out-width {
+  width: 140%;
+  position: relative;
+  margin-left: -20%;
+  margin-right: -20%;
+  max-width: 140%;
+
+  @include media-query($content-width * 1.4) {
+      width: 100%;
+      position: relative;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: none;
+  }
+}
+
+.shadow {
+  box-shadow: 0 0 0 2px $background-color, 0 0 0 2px $grey-color, 0 0 20px rgba($grey-color, 0.3);
+  border-radius: 8px;
+}
+
+.add-margin {
+  margin-top: $spacing-unit * 2;
+  margin-bottom: $spacing-unit * 2;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
