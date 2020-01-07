@@ -10,7 +10,7 @@ In the fall of 2019 the product team identified the new user experience as an ar
 
 We are still actively working on testing these new features and initial results should be coming soon!
 
-## We knew we had a retention problem that needed to be solved.
+## We knew we had a student retention problem.
 
 At Handshake, our mission is to enable all students to build meaningful careers by helping them find their next steps.
 
