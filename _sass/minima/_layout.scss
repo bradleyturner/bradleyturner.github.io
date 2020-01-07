@@ -432,6 +432,20 @@
   display: none;
 }
 
+.footer-link {
+  color: $text-color;
+  text-decoration: underline;
+  margin-left: $spacing-unit / 2;
+  border-radius: 40px;
+  padding: 8px 16px;
+
+  &:hover,
+  &:focus {
+    box-shadow: $focus-shadow;
+    outline: none;
+  }
+}
+
 /**
  * Posts
  */
