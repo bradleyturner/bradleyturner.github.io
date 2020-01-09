@@ -1,138 +1,141 @@
 ---
 layout: post
-title: "Turning an open ended problem statement into small shippable improvements"
+title: "Losing our focus while improving our new user experience"
 date: 2019-12-24 20:19:12 -0400
 categories: jekyll update
-excerpt: "I worked on improving our new user experience by conducting research, exploring and testing concepts, and breaking them down into individual problems we could solve"
+excerpt: "I worked on increasing student retention by helping students see relevant jobs on their first day"
 image: "focus.png"
 ---
-In the fall of 2019 the product team identified the new user experience as an area of opportunity for us to work on. I dug deeper to understand the current challenges and areas for improvement, digging into current usage data, conducting a UX audit, and running concept testing to focus our efforts and outline proposed phasing to tackle various areas for improvements.
+In the Fall of 2019 I worked on increasing student retention by focusing our new user experience on getting students to see relevant jobs on their first day.
 
-We are still actively working on testing these new features and initial results should be coming soon!
+I led the design process for our web, mobile web, and iOS platforms, collaborating closely with Product, Engineering, and Design partners along the way. At one point, we got so excited about solving a problem that we got distracted from our real area of opportunity...
 
-## We knew we had a retention problem that needed to be solved.
+## We started with a student retention problem
 
-At Handshake, our mission is to enable all students to build meaningful careers by helping them find their next steps.
+At Handshake, our mission is to enable all students to build meaningful careers by helping them find their first jobs.
 
-We do that by providing a personalized experience that helps students navigate all the job postings, employers, events, resources, and information they need without depending on a personal network.
+We do that by providing a personalized experience that helps students navigate all the job postings, employers, events, resources, and information they need regardless of who they or their parents know.
 
-In order for us to do those things, students need to use our product during their career search. **Unfortunately, students weren’t engaging with Handshake in the ways we need to help them effectively.**
+This only works, however, if students actually use our product throughout their career search. Unfortunately, many of our student users sign up, perform a few basic actions on our platform, then drop off and never return. 
 
 ![Pie graphs showing 75% of students didn’t return within 7 days of signing up and 50% of students didn’t return within 30 days of signing up](/assets/images/finding-our-focus/intro-stats.png){:class="pop-out-width"}
 
+It’s safe to assume that we’re providing these students little-to-no value in their career search.
 
-## I conducted an audit of the current experience to identify areas of opportunity
+## Retained students were viewing valuable content on their first day
 
-Before jumping to exploring solutions, I wanted to understand what the experience was like today that might be causing these poor retention rates.
+When I first learned about these stats I wanted to know what returning students, i.e. those who are active beyond their first day on our platform, were doing during their first day that others weren’t. And if we could answer that question, could we possibly influence more students to take those actions?
 
-I documented the current experience, evaluating it through the lens of UX best practices, and partnered with our data scientist to identify how the current flow was performing at scale. I documented the flow in a Google Slides deck and shared it out with the team.
+I partnered with our data scientist to answer this question. We studied correlations between common first-day actions, such as completing different steps of onboarding or interacting with jobs and other content, and retention and applicant rates. Along the way, we exchanged ideas and hypotheses about why certain first-day actions might influence a student to return or eventually apply to a job. 
 
-![Presentation screenshot](/assets/images/finding-our-focus/nux-audit.png){:class="pop-out-width"}
+This analysis resulted in 2 main takeaways:
 
-**I started the deck with an overview of the current flow, which looked like this:**
-* Agree to terms of service
-* Pick privacy status
-* Go through 10 question on boarding flow
-* Land in the product on the initial page you were trying to get to when you had to sign up (For 75% of users that page was the home page)
-* Home page has a few actions to take in the top banner
-* Email drip campaign – 1 day, 3 days, and 7 days after agreeing to terms of service
+![Supporting graphs](/assets/images/finding-our-focus/onboarding-completion.png){:class="pop-out-width add-margin"}
 
-**General drop-off**
-* 1 in 5 students don’t make it past on boarding
-* Only 75% of students who finish on boarding are directed to the home page
-* 15% of students don’t take any action on their first day after landing on home for the first time
-* Only 40% of students who make it past on boarding see a job page on their first day
+Only 80% of students finished our onboarding flow, and those that did were 35% more likely to come back and 2x likely to eventually apply to a job than those who did not.
 
-### In onboarding we were trying to communicate 3 core value props in between asking 10+ questions
-As I was evaluating the experience, I realized that we were trying to pitch 3 different value props to students without showing them any real content, asking them 10+ questions along the way.
+![Supporting graphs](/assets/images/finding-our-focus/job-view-stats.png){:class="pop-out-width add-margin"}
 
-The value props we were pitching included:
-* Provide more relevant job recommendations by asking questions about their career interests
-* Get students noticed by employers by encouraging them to make their profile public and asking questions about their experience and qualifications
-* Build the peer to peer community by prompting students to make their profile public
+Only 40% of students who finished onboarding also viewed jobs on their first day, and those that did were 2x more likely to end up applying.
 
-Pitching these 3 value props and asking all of these questions was causing 1 in 5 students to leave the product before they got to see any of our content. Digging deeper, we found **onboarding drop-off is highly correlated with low retention and applicant rates.** Students who complete or skip on boarding are 35% more likely to come back and 2x likely to eventually apply to a job than those who drop off
+With these takeaways in mind, I audited our current experience to understand what might be causing first-day students to drop off before seeing jobs.
 
-Fixing this onboarding flow could have a large positive impact on retention and applicant rates.
+## Our new user experience was not focused on getting students to jobs
+
+### Our onboarding flow was bloated with questions related to other business initiatives
+
+Our onboarding flow was long, asking students 10 questions before we actually showed them what we had to offer, causing 20% of the students that signed up never to see our product. 
+
+These 10 questions supported initiatives across 3 separate product teams that all wanted student attention:
+
+1. **The Connections Team** wanted students to make their profiles public so that we could support our peer messaging feature to help students learn from each other
+2. **The Guidance Team** wanted to know what types of jobs students were interested in so we could recommend them relevant jobs
+3. **The Employer Team** wanted students to fill out their experience and make their profile public so employers could proactively recruit them
 
 ### First day traffic was all over the place, suggesting lack of focus for students
-For students who did make it through our onboarding flow, we found that their experience wasn't very directed. 
+Students who made it through our onboarding flow found no clear path for them to take beyond the home page. 
 
-We found that 15% of students didn’t do anything after landing on home. The most popular page to visit is postings at 40%, with profile at 37%, notifications at 25%, and jobs at 22%. This was a result of the home page having prompts to fill out your profile with almost equal weight to exploring jobs.
+In fact, we discovered that 15% of those students never took any action. The rest  spread out their browsing across jobs, profile, notifications, and more. Looking at the current UI, I attributed this to multiple competing CTAs and overwhelming navigation at the top of the page.
 
-We found that **students who visit job search or view a job on their first day are 2-3x more likely to end up applying**. We could optimize the home page to better direct students to find relevant jobs on their first day.
+## How might we shorten or remove the onboarding flow?
+One of the biggest problems the team wanted to solve was removing friction from the onboarding flow so more students would make it to our product in the first place. We knew the experience had been getting more and more bloated over time and were eager to tackle it head on.
 
-## If we were going to make improvements here, we'd need to separate out these 3 value props
-One of the biggest problems I wanted to solve was cramming all 3 value props and asking for information before we were able to show students anything valuable in return.
+<div class="reflection">
+  <h4>Reflection:</h4> 
+  <p>While the team was excited to tackle this problem, looking back on the initial data analysis we were only losing 20% of students in the onboarding flow, and we were losing 60% of students after onboarding before they got to jobs.</p>
 
-I wondered if we could spread them out over the student’s journey, starting with the promises we could deliver on fastest. I explored concepts that introduced the value props in the order:
-1. **We will help you find relevant opportunities.** We know a majority of students come to Handshake to look for jobs. If they don’t see jobs they are looking for on their first experience, why would they come back? Let’s get those jobs in front of them and start showing them that we can deliver on what they are looking for.
-2. **Employers will proactively reach out to you when you fill out your profile.** This requires a good amount of effort on the student’s part to fill out their profile so they will be noticed by employers. Let’s introduce this concept after they’ve seen all of the job opportunities that we have for them. That will make them more likely to want to fill out their profiles so they can get those jobs.
-3. **You can message your peers about career-related questions when you make your profile public.** Let’s introduce this when students have found jobs or employers that they want to learn more about instead of introducing it out of context.
+  <p>I spent about a week exploring this solution space before we decided to refocus on trying to solve the post-onboarding traffic issue on the homepage, resulting in concepts and insights that were only tangentially useful.</p>
+</div>
 
-For my first concept, I tried shortening the onboarding survey to just questions that result in more relevant job recommendations and moved the other prompts later in the flow:
 
-![Wireflow of an experience showing a shortened onboarding experience](/assets/images/finding-our-focus/shortened-survey.png){:class="pop-out-width"}
+To tackle the challenge of removing some of the onboarding questions, I started by grouping them into these 3 categories based on what value the students got by answering the questions:
+1. You’ll get more relevant recommendations if you tell us what types of jobs you’re interested in
+2. Employers will proactively reach out to you when you fill out your profile and make it public.
+3. You can message your peers about career-related questions when you make your profile public.
 
-For my next concept, I made the initial job relevance survey optional, encouraging students to fill it out with a prompt on their homepage, but not blocking their experience:
+After that, I explored multiple concepts that surfaced those value props and collected the related information throughout the students experience.
 
-![Wireflow of an experience showing an opt-in onboarding survey](/assets/images/finding-our-focus/opt-in-survey.png){:class="pop-out-width"}
 
-As I was exploring the shortened onboarding concepts I realized the questions we were asking were duplicative of search filters students would later use when searching for jobs. The third concept explored removing those questions entirely and trying to use their search inputs to tune our recommendations instead of explicitly asking.
+![Wireflow of an experience showing a shortened onboarding experience](/assets/images/finding-our-focus/shortened-survey.png){:class="full-width"}
 
-![Wireflow of an exploratory experience that learns your interests as you interact with the product](/assets/images/finding-our-focus/incorporate-survey-into-normal-flow.png){:class="pop-out-width"}
+## We tested the concepts with students to gut check our approach
 
-We reviewed these 3 concepts with product and design team leads, generating a list of assumptions we wanted to test before committing to any one direction.
-
-1. If we remove onboarding and personalize the experience over time, will students perceive Handshake as more or less relevant?
-2. If we embed the value props throughout the student experience will they still understand all 3?
+After reviewing these concepts with stakeholders we came up with a list of assumptions we wanted to test before committing to one direction:
+1. If we remove the questions that help us initially personalize the student experience, will students perceive Handshake as more or less relevant?
+2. If we instead ask those 10 questions at later points throughout the student experience, will students still answer those questions?
 3. Would students be surprised or confused by not having an explicit onboarding process?
 
-
-## We tested 2 concepts to allow students to compare their experiences
-We recruited 6 students from various schools and majors across the country who had previously signed up with Handshake, but not interacted much with the product. I led remote user testing sessions with these students, starting with understanding their previous experience searching for jobs and then having them click through 2 prototypes, digging into their experience as they went.
+### We tested 2 concepts to allow students to compare their experiences
+We recruited 6 students from various schools and majors across the country who had previously signed up with Handshake but not interacted much with the product. I led remote user testing sessions with these students, starting by asking them about their previous experience searching for jobs and then having them click through 2 prototypes, digging into their experience as they went.
 
 ![Presentation screenshot](/assets/images/finding-our-focus/prototype.gif){:class="pop-out-width shadow add-margin"}
 
-One prototype had a shortened on boarding experience that asked students their job preferences before showing them the product. The other dropped them right into the product with the ability to explore in whatever way they saw fit. We alternated which prototype we showed them first so that we didn’t bias their experience by always starting with one version.
+One prototype had a shortened onboarding experience that asked students their job preferences before showing them the product. The other dropped them right into the product with the ability to explore in whatever way they saw fit. We alternated which prototype we showed them first so that we didn’t bias their experience by always starting with one version.
 
 ### We felt confident moving forward with a version that didn’t include onboarding
-Overall the version without the on boarding survey had better results. Students were still able to quickly find relevant jobs through prompts when we didn’t ask them up front and they didn’t get stuck on questions they didn’t know the answer to like what job roles they were interested in.
+Overall the version without the onboarding survey had better results. Students were still able to quickly find relevant jobs through prompts when we didn’t ask them up front and they didn’t get stuck on questions they didn’t know the answer to when there was no onboarding survey.
 
-By having an explicit prompt around getting proactive messages from recruiters by filling out your profile we found that students didn’t previously realize that was possible, and students still encountered community features throughout their experience. There was only one student who specifically mentioned that they were surprised by not having an introduction before getting dropped into the product.
+Students who were interested in getting proactively recruited by employers were still interested in filling out their profiles.
 
-While we weren’t explicitly testing the layout of the home page, we heard from many students that they felt overwhelmed by all of the different types of content we presented them with. This would be top of mind as we continued iterating on this project.
+There was only one student who specifically mentioned that they were surprised by not having an introduction before getting dropped into the product.
 
-## We needed to break this down into smaller shippable pieces
-We felt confident about moving in a direction that introduced value props throughout the student experience and allowed students to more easily find the type of content they were looking for.
+While we weren’t explicitly testing the layout of the home page, we heard from many students that they felt overwhelmed by all of the different types of content we presented them with.
 
-We refined this direction and presented a prototype to the iOS and web engineering teams, discussing how we might separate the work into deliverable pieces. We decided to tackle the pieces like this:
+
+## We had a big concept to work toward. Next we needed to break it down.
+We felt confident about moving in a direction that introduced value props throughout the student experience and allowed students to more easily find the type of content they were looking for, but we would need to build quite a bit of new functionality throughout the product to support this concept and remove the current onboarding experience.
+
+We refined this direction to feel less overwhelming and presented a prototype to the iOS and web engineering teams, discussing how we might separate the work into deliverable pieces, resulting in this breakdown:
 
 ![Phasing visualization](/assets/images/finding-our-focus/phasing.png){:class="full-width add-margin"}
 
 1. **Content type navigation** – surface the core types of content in a digestible manner at the top of the home page, allowing students to pick their path if they know what they are looking for
 2. **Job role exploration** – for students who don’t know what they are looking for, start to surface career paths they might be interested in
 3. **Home page prompts** – start to set us up to introduce the concept of getting proactive messages from employers by building out our first home page prompt
-4. **Global search** – condense the various content type searches into one search experience with shared UI patterns
 
-With this phasing we are able to start supporting all of the experiences we will need to eventually remove the onboarding survey entirely. This way we can test all of these experiences individually without waiting until we have built everything out all at once.
+When reviewing this plan with the VP of Product, he pointed out that the unfocused homepage experience seemed like a bigger problem than the onboarding flow and encouraged us to focus on the content type navigation since that was more likely to solve that problem.
 
-## Nailing the UI for content type exploration was a team affair
-While exploring UI options for these 6 cards at the top of the page, I ended up collaborating with 3 other members of the design team, each of us contributing directions and evaluating options.
+<div class="reflection">
+  <h4>Reflection:</h4> 
+  <p>This might have been a good opportunity for us to take a step back in order to explore and test some new concepts focused on directing students to jobs from the home page instead of trying to remove the onboarding friction.</p>
 
-Overall we tried hundreds of options, playing with size, color, shape, imagery, you name it. 
+  <p>We were trying to meet a 2 week product definition timeline so we decided not to take another week for exploration and testing, resulting in more uncertainty about whether this solution was the right one.</p>
+</div>
+
+## Nailing the UI for content type exploration was an opportunity to incorporate new branding
+While exploring UI options for these 6 cards at the top of the page, I ended up collaborating with our Director of Design, Student Design Lead, and our iOS  Product Designer.
+
+We were simultaneously tasked with incorporating a new corporate brand into the product and this was the first project to test out some of those ideas. Overall we tried hundreds of options; playing with size, color, shape, imagery, you name it. 
 
 ![UI explorations](/assets/images/finding-our-focus/card-explorations.png){:class="full-width add-margin"}
 
-We were also starting to incorporate a new brand direction into the product and this was the first project to test out some of those ideas.
-
-In the end, we wanted something that made a statement the first time you saw it, differentiating us from other job search platforms students might be using. We also wanted to make sure the content types were clear and were the focus of your attention when you landed on the home page.
+In the end, we wanted something that differentiated us from other job search platforms students might be using. We also wanted to make sure the content types were clear and were the focus of your attention when you landed on the home page.
 
 Because of these reasons, we opted for a simple card with the content title, a short descriptions, and a supporting spot illustration that didn't distract from the actual title. We set these cards on a deep blue background to draw attention to them without making the UI feel overwhelming.
 
 ![Home specs](/assets/images/finding-our-focus/final-ui.png){:class="pop-out-width add-margin shadow"}
 
-Heading in this direction also resulted in needing to tune up the styling of the main navigation bar to allow the content type navigation on the home page to stand out.
+This direction also required us to tune the styling of the main navigation bar to allow the content type navigation on the home page to stand out.
 
 After we found a direction we thought was most successful, I spec’d out the UI details to make it easier for the engineering team to implement the new styles we were introducing and fine-tune the responsive behavior.
 
@@ -140,10 +143,19 @@ After we found a direction we thought was most successful, I spec’d out the UI
 
 ![Navigation specs](/assets/images/finding-our-focus/nav-specs.png){:class="full-width add-margin"}
 
-Reflection:
-Since this project included so much conceptual work and tons of UI exploration, engineers found it challenging to understand what was ready to be built and shipped and what was still in flight. As a result of this confusion I put together a Figma file template for our team that breaks the pages into sections that align with the phases of our design process.
+<div class="reflection">
+  <h4>Reflection:</h4> 
+  <p>This project ended up having tons of explorations and quite a few new component design drafts and specs in Figma which were proactively shared out with the engineers along the way.</p>
 
-## We are improving the experience one piece at a time
-The first phase of this project – the content type navigation – is now being A/B tested to understand how it impacts first day traffic, retention rate, and eventual application rates.
+  <p>When it actually came time to implement the final UI, I got feedback from engineers that they were struggling to keep track of what version they should be implementing so I ended up tackling a mini design project to make a Figma template to make this handoff easier in the future.</p>
+</div>
 
-I’m now working on the next pieces of the project which will continue to address our areas of opportunity for the new user experience, heading in a direction which will allow us to remove friction and embed our value in contextual areas throughout the student experience.
+## Adjusting our focus will help more students throughout their career journey
+We are currently A/B testing the first iteration of the content navigation on the home page to understand how it impacts first day traffic, retention rate, and eventual application rates.
+
+While that’s being tested the team is picking back up the work to remove friction from our onboarding flow so our initial concepts and insights are coming in handy.
+
+Working on this project was a great reminder of how the problems the team is most excited about solving aren’t always the ones that are having the biggest impact on the user experience. 
+
+I’m grateful that our team was able to catch that in the design process and refocus on what we believed would be most impactful before spending too much time refining and building a different experience.
+
