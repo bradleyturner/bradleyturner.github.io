@@ -452,6 +452,18 @@
   }
 }
 
+.reflection {
+  background-color: $tan-background;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: $spacing-unit;
+
+  h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+}
+
 .post-content {
   margin-bottom: $spacing-unit;
 
