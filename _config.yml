@@ -18,6 +18,9 @@ email: bsturner219@gmail.com
 description: > # Not sure what I'm up to yet... Guess we will find out as we start building.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: bradturner13
+github_username:  bradleyturner
+linkedin_username: bradturner13
 
 # Build settings
 markdown: kramdown

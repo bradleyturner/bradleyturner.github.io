@@ -466,11 +466,18 @@
   }
 }
 
+.rounded-corners {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 .reflection {
   background-color: $tan-background;
-  padding: 24px;
+  padding: 24px 24px 8px;
   border-radius: 8px;
   margin-bottom: $spacing-unit;
+  font-size: $small-font-size;
+  line-height: 22px;
 
   h4 {
     font-family: Arial, Helvetica, sans-serif;
