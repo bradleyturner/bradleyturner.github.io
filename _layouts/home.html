@@ -27,7 +27,7 @@ layout: default
         <a class="post-wrapper" href="{{ post.url | relative_url }}">
           <div class="post-overview">
             <h3 class="post-link">{{ post.title | escape }}</h3>
-            <span class="post-meta">{{ post.date | date: "%b %Y" }}</span>
+            <span class="post-meta">{{ post.date | date: "%B %Y" }}</span>
             <p class="post-excerpt">{{ post.excerpt }}</p>
           </div>
           <img class="post-image" src="/assets/images/home/{{ post.image }}" />

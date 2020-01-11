@@ -34,7 +34,7 @@ layout: default
       <a class="post-wrapper" href="{{ page.next.url | relative_url }}">
         <div class="post-overview">
           <h3 class="post-link">{{ page.next.title | escape }}</h3>
-          <span class="post-meta">{{ page.next.date | date: "%b %Y" }}</span>
+          <span class="post-meta">{{ page.next.date | date: "%B %Y" }}</span>
           <p class="post-excerpt">{{ page.next.excerpt }}</p>
         </div>
         <img class="post-image" src="/assets/images/home/{{ page.next.image }}" />

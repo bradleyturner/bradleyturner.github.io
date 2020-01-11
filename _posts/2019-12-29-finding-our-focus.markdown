@@ -75,8 +75,8 @@ One of the biggest problems the team wanted to solve was removing friction from 
 To tackle the challenge of removing some of the onboarding questions, I started by grouping them into these 3 categories based on what value the students got by answering the questions:
 
 1. You’ll get more relevant recommendations if you tell us what types of jobs you’re interested in
-2. Employers will proactively reach out to you when you fill out your profile and make it public.
-3. You can message your peers about career-related questions when you make your profile public.
+2. Employers will proactively reach out to you when you fill out your profile and make it public
+3. You can message your peers about career-related questions when you make your profile public
 
 After that, I explored multiple concepts that surfaced those value props and collected the related information throughout the students experience.
 
