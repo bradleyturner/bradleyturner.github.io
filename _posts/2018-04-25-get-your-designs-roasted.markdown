@@ -47,7 +47,7 @@ Text-based asynchronous feedback like this can lack emotion. Design needs to be 
 Anyone in the company can see what we’re working on, interpret comments in their own way, and leave their own comments and questions.
 Public feedback isn’t always the right solution. Sometimes we designers need the space to discuss our designs without getting into the concerns from others around how a certain design might drive metrics, or hashing out specific implementation details. Of course, we do have these conversations throughout the design process, but we choose to have them at the right time. “Right now” is not always the right time.
 
-![Presentation screenshot](/assets/images/roasted/design-crit.png){:class="pop-out-width  add-margin"}
+![Presentation screenshot](/assets/images/roasted/design-crit.png){:class="pop-out-width  shadow add-margin"}
 
 ## Build it into your process
 With these two characteristics in mind, we looked at how we’ve incorporated avenues for feedback into our design process.
@@ -69,4 +69,4 @@ At Handshake, we don’t design in isolation. Collaboration and transparency hav
 
 While it’s perfectly normal to want to keep your designs private until you’ve got all the details worked out, we encourage you to challenge yourself to put them out in the open early. As a Design Team, set an example for the rest of the company about what great feedback looks like by putting that process in the open, too.
 
-![Presentation screenshot](/assets/images/roasted/roasted.gif){:class="add-margin"}
+![Presentation screenshot](/assets/images/roasted/roasted.gif){:class="add-margin shadow"}

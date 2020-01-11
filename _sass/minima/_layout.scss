@@ -222,9 +222,12 @@
 }
 
 .page-section-heading {
+  font-family: Georgia, 'Times', 'Times New Roman', serif;
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
+  margin: 0 0 $spacing-unit * 2;
+  display: block;
 }
 
 .page-heading {
@@ -241,11 +244,14 @@
 }
 
 .page-eyebrow {
+  font-family: $base-font-family;
   color: $grey-color;
-  font-size: $small-font-size;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   display: block;
-  margin-bottom: $spacing-unit/4 * 3;
+  font-weight: bold;
+  margin-bottom: $spacing-unit;
+  text-transform: uppercase;
 }
 
 .page-cta {
@@ -312,14 +318,12 @@
 
 .post-wrapper {
   background-color: $tan-background;
-  padding: 24px;
+  padding: 24px 24px 8px;
   border-radius: 8px;
   display: block;
   color: $text-color;
   display: flex;
   flex-wrap: wrap-reverse;
-  // align-items: flex-start;
-  // align-content: flex-start;
   justify-content: space-between;
   transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
 
@@ -477,7 +481,7 @@
   border-radius: 8px;
   margin-bottom: $spacing-unit;
   font-size: $small-font-size;
-  line-height: 22px;
+  line-height: 24px;
 
   h4 {
     font-family: Arial, Helvetica, sans-serif;

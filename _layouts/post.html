@@ -13,7 +13,33 @@ layout: default
     {{ content }}
   </div>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
 </article>
+<div class="page-section">
+  <h2 class="page-section-heading">Continue reading</h2>
+  <ul class="post-list">
+  {% if page.previous.url %}
+    <li>
+      <a class="post-wrapper" href="{{ page.previous.url | relative_url }}">
+        <div class="post-overview">
+          <h3 class="post-link">{{ page.previous.title | escape }}</h3>
+          <span class="post-meta">{{ page.previous.date | date: "%b %Y" }}</span>
+          <p class="post-excerpt">{{ page.previous.excerpt }}</p>
+        </div>
+        <img class="post-image" src="/assets/images/home/{{ page.previous.image }}" />
+      </a>
+    </li>
+  {% endif %}
+  {% if page.next.url %}
+    <li>
+      <a class="post-wrapper" href="{{ page.next.url | relative_url }}">
+        <div class="post-overview">
+          <h3 class="post-link">{{ page.next.title | escape }}</h3>
+          <span class="post-meta">{{ page.next.date | date: "%b %Y" }}</span>
+          <p class="post-excerpt">{{ page.next.excerpt }}</p>
+        </div>
+        <img class="post-image" src="/assets/images/home/{{ page.next.image }}" />
+      </a>
+    </li>
+  {% endif %}
+  </ul>
+</div>
