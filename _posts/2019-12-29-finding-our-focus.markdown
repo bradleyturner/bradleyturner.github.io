@@ -63,7 +63,7 @@ In fact, we discovered that 15% of those students never took any action. The res
 
 ## How might we shorten or remove the onboarding flow?
 
-One of the biggest problems the team wanted to solve was removing friction from the onboarding flow so more students would make it to our product in the first place. We knew the experience had been getting more and more bloated over time and were excited about fixing it.
+One of the biggest problems the team wanted to solve was removing friction from the onboarding flow so more students would make it to our product in the first place. We knew the experience became more and more bloated over time and were excited about fixing it.
 
 <div class="reflection">
   <span class="page-eyebrow">Reflection</span>
