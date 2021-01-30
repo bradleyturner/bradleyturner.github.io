@@ -3,7 +3,7 @@ layout: post
 title: "Losing our focus while improving our new user experience"
 date: 2019-12-24 20:19:12 -0400
 categories: jekyll update
-excerpt: "I worked on increasing student retention by helping students see relevant jobs on their first day"
+excerpt: "Increasing student retention by helping students see relevant jobs on their first day"
 image: "focus.png"
 ---
 

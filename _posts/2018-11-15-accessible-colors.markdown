@@ -3,7 +3,7 @@ layout: post
 title:  "Building accessibility into our color systems and tools"
 date:   2018-11-15 20:19:12 -0400
 categories: jekyll update
-excerpt: "I updated our color system to make it easier to meet WCAG AA contrast requirements."
+excerpt: "Updating our color system to make it easier to meet WCAG AA contrast requirements."
 image: "color.png"
 ---
 

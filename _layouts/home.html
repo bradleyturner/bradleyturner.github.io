@@ -21,22 +21,13 @@ layout: default
   <div class="page-section">
     <h2 class="page-eyebrow">My work</h2>
     <span class="page-section-heading">I've worked on features, systems, processes, and more</span>
-    <p>
-      The articles and case studies below were last updated in December 2019.
-    </p>
-    <p>
-      In 2020 I joined Blackfynn, designing experiences to help Parkinson's disease researchers and patients track progression of the disease. 
-    </p>
-    <p style="margin-bottom: 32px;">
-       I'm currently curating some highlights of that work and will have an update posted by Saturday, January 30, 2021. If you'd like to hear about a specific piece of that work, please let me know!
-    </p>
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
         <a class="post-wrapper" href="{{ post.url | relative_url }}">
           <div class="post-overview">
-            <h3 class="post-link">{{ post.title | escape }}</h3>
             <span class="post-meta">{{ post.date | date: "%B %Y" }}</span>
+            <h3 class="post-link">{{ post.title | escape }}</h3>
             <p class="post-excerpt">{{ post.excerpt }}</p>
           </div>
           <img class="post-image" src="/assets/images/home/{{ post.image }}" />
@@ -50,7 +41,7 @@ layout: default
     <span class="page-section-heading">I've built products for college student job seekers and Parkinson’s Disease researchers</span>
     <p>
       I started designing while studying Software Engineering at Michigan
-      Tech. After starting as an intern at Handshake in 2016, I worked on a variety of design projects
+      Tech. During my time at Handshake from 2016 to 2020, I worked on a more projects than I can count
       and helped grow our design system and processes as our team grew from 35
       to over 200 employees.
     </p>
