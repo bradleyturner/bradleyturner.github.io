@@ -4,7 +4,7 @@ title: "Reflecting on one year of designing for Parkinson's research"
 date: 2021-01-28 20:19:12 -0400
 categories: jekyll update
 excerpt: "Helping Parkinson’s researchers and patients track progression of the disease"
-image: "focus.png"
+image: "zoom.png"
 ---
 
 ![Presentation screenshot](/assets/images/blackfynn/collage.png){:class="full-width add-margin"}
