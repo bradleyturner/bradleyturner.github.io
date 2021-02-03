@@ -40,7 +40,7 @@ I assumed that navigating between questions by clicking a button would be easier
 
 One thing we got right: Larger fonts and tap targets helped all participants use the product. Many participants specifically mentioned how much easier it was to use compared to other apps and websites they use today.
 
-One thing we got wrong: Presenting one questions at a time frustrated many participants. Constantly clicking “Next” felt unnecessary for many users and also made it challenging to go back and reference previous questions and answers since they couldn’t just scroll back up.
+One thing we got wrong: Presenting one question at a time frustrated many participants. Constantly clicking “Next” felt unnecessary for many users and also made it challenging to go back and reference previous questions and answers since they couldn’t just scroll back up.
 
 One additional insight: Having a tremor doesn’t automatically mean it’s hard for a participant to scroll. For example, one participant showed us that scrolling with their thumb while holding their phone was much easier than scrolling on an iPad perched on a table.
 
